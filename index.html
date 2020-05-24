@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale = 1">
+  <title>Weather API</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="weather.js"></script>
+
+</head>
+
+<body>
+  <div class="jumbotron">
+    <h1>Weather Dashboard</h1>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-auto">
+        <!--left column
+              search bar, city selection-->
+        <input id="searchbar" onkeyup="search_cities()" type="text" name="search" placeholder="Search cities..">
+
+        <ol id='list'>
+          <li class="cities">San Antonio</li>
+          <li class="cities">Austin</li>
+          <li class="cities">Laredo</li>
+          <li class="cities">Houston</li>
+          <li class="cities">Dallas</li>
+          <li class="cities">Fort Worth</li>
+          <li class="cities">Arlington</li>
+          <li class="cities">Corpus Christi</li>
+          <li class="cities">South Padre Island</li>
+          <li class="cities">Rock Port</li>
+          <li class="cities">El Paso</li>
+        </ol>
+
+
+        <!--search bar-->
+
+      </div>
+
+        <div class="card">
+          <!--Weather API Here-->
+        </div>
+      </div>
+    </div>
+
+</body>
+
+</html>
