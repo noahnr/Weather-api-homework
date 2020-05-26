@@ -8,12 +8,15 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
   <script src="weather.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
 </head>
 
 <body>
   <div class="jumbotron">
     <h1>Weather Dashboard</h1>
+    <p id="currentDay" class="lead"></p>
   </div>
 
   <div class="container">
@@ -21,7 +24,8 @@
       <div class="col-md-auto">
         <!--left column
               search bar, city selection-->
-        <input id="searchbar" onkeyup="search_cities()" type="text" name="search" placeholder="Search cities..">
+        <input type="text" id="cityName">
+        <button onclick="getWeather()">Search</button>
 
         <ol id='list'>
           <li class="cities">San Antonio</li>
@@ -43,8 +47,14 @@
       </div>
 
         <div class="card">
+          
           <!--Weather API Here-->
         </div>
+        <div class="historyCard">
+         
+        </div>
+
+        
       </div>
     </div>
 
